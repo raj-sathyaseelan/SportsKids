@@ -14,9 +14,11 @@ class KidTableViewController: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil)
     var filteredKids = [Kid]()
     
-    func filterKidbySearchCity (searchCity: String) {
+    func filterKidbySearchCity (searchCity: String, scope: String = "All") {
+        
         filteredKids = kids.filter {kid in
-        return "\(kid.firstName) \(kid.lastName)".lowercased().contains(searchCity.lowercased())
+            let schoolMatch = (scope == "All") || (kid.schoolName == scope)
+        return schoolMatch && "\(kid.firstName) \(kid.lastName)".lowercased().contains(searchCity.lowercased())
         }
         
         tableView.reloadData()
@@ -32,22 +34,27 @@ class KidTableViewController: UITableViewController {
         definesPresentationContext = true
         self.tableView.tableHeaderView = searchController.searchBar
         
+        searchController.searchBar.scopeButtonTitles = ["All", "Coyote Creek", "Quail Run"]
+        searchController.searchBar.delegate = self
         
     }
     
     func loadSampleData() {
         
         let kidPhoto1 = UIImage(named: "kid1")!
-        let kid1 = Kid(firstName: "Joe", lastName: "Buck", photo: kidPhoto1, schoolName: "Coyote Creek Elementary", age: 6)
+        let kid1 = Kid(firstName: "Joe", lastName: "Buck", photo: kidPhoto1, schoolName: "Coyote Creek", age: 6)
         
         let kidPhoto2 = UIImage(named: "kid2")!
-        let kid2 = Kid(firstName: "James", lastName: "Callaghan", photo: kidPhoto2, schoolName: "Quail Run Elementary", age: 7)
+        let kid2 = Kid(firstName: "James", lastName: "Callaghan", photo: kidPhoto2, schoolName: "Quail Run", age: 7)
         
         let kidPhoto3 = UIImage(named: "kid3")!
-        let kid3 = Kid(firstName: "Jill", lastName: "Johnson", photo: kidPhoto3, schoolName: "Walt Disney Elementary", age: 6)
+        let kid3 = Kid(firstName: "Jill", lastName: "Johnson", photo: kidPhoto3, schoolName: "Coyote Creek", age: 6)
         
         
-        kids += [kid1, kid2, kid3]
+        let kid4 = Kid(firstName: "Calm", lastName: "Johnson", photo: kidPhoto3, schoolName: "Coyote Creek", age: 7)
+        
+        
+        kids += [kid1, kid2, kid3, kid4]
         
     }
 
@@ -156,10 +163,20 @@ class KidTableViewController: UITableViewController {
 
 }
 
+
+
 extension KidTableViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
-        filterKidbySearchCity(searchCity: searchController.searchBar.text!)
+        let scope = searchController.searchBar.scopeButtonTitles![searchController.searchBar.selectedScopeButtonIndex]
+        filterKidbySearchCity(searchCity: searchController.searchBar.text!, scope: scope)
     }
     
+}
+
+extension KidTableViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterKidbySearchCity(searchCity: searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
 }
