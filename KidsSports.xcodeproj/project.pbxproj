@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2488801DA0D6050098919B /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24887F1DA0D6050098919B /* Kid.swift */; };
+		1B2488881DA0DD6E0098919B /* KidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2488871DA0DD6E0098919B /* KidTableViewController.swift */; };
 		1B84CF8F1D98F2B7004449CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CF8E1D98F2B7004449CA /* AppDelegate.swift */; };
 		1B84CF911D98F2B7004449CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CF901D98F2B7004449CA /* ViewController.swift */; };
 		1B84CF941D98F2B7004449CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B84CF921D98F2B7004449CA /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		1B84CFA41D98F2B7004449CA /* KidsSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CFA31D98F2B7004449CA /* KidsSportsTests.swift */; };
 		1B84CFAF1D98F2B7004449CA /* KidsSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CFAE1D98F2B7004449CA /* KidsSportsUITests.swift */; };
 		1B84CFBD1D98F6BE004449CA /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B84CFBC1D98F6BE004449CA /* fontawesome-webfont.ttf */; };
+		1B96EF0D1DA0E8F100930C10 /* KidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B96EF0C1DA0E8F100930C10 /* KidTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B24887F1DA0D6050098919B /* Kid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Kid.swift; path = model/Kid.swift; sourceTree = "<group>"; };
+		1B2488871DA0DD6E0098919B /* KidTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidTableViewController.swift; sourceTree = "<group>"; };
 		1B84CF8B1D98F2B7004449CA /* KidsSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B84CF8E1D98F2B7004449CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B84CF901D98F2B7004449CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		1B84CFAE1D98F2B7004449CA /* KidsSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsSportsUITests.swift; sourceTree = "<group>"; };
 		1B84CFB01D98F2B7004449CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B84CFBC1D98F6BE004449CA /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "../../../../../../../Downloads/font-awesome-4.6-3.3/fonts/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		1B96EF0C1DA0E8F100930C10 /* KidTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				1B84CFBC1D98F6BE004449CA /* fontawesome-webfont.ttf */,
 				1B84CF971D98F2B7004449CA /* LaunchScreen.storyboard */,
 				1B84CF9A1D98F2B7004449CA /* Info.plist */,
+				1B24887F1DA0D6050098919B /* Kid.swift */,
+				1B2488871DA0DD6E0098919B /* KidTableViewController.swift */,
+				1B96EF0C1DA0E8F100930C10 /* KidTableViewCell.swift */,
 			);
 			path = KidsSports;
 			sourceTree = "<group>";
@@ -263,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2488881DA0DD6E0098919B /* KidTableViewController.swift in Sources */,
+				1B2488801DA0D6050098919B /* Kid.swift in Sources */,
 				1B84CF911D98F2B7004449CA /* ViewController.swift in Sources */,
+				1B96EF0D1DA0E8F100930C10 /* KidTableViewCell.swift in Sources */,
 				1B84CF8F1D98F2B7004449CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +513,7 @@
 				1B84CFB51D98F2B7004449CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B84CFB61D98F2B7004449CA /* Build configuration list for PBXNativeTarget "KidsSportsTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +522,7 @@
 				1B84CFB81D98F2B7004449CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B84CFB91D98F2B7004449CA /* Build configuration list for PBXNativeTarget "KidsSportsUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +531,7 @@
 				1B84CFBB1D98F2B7004449CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
