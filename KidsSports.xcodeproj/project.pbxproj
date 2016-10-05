@@ -17,6 +17,8 @@
 		1B84CFA41D98F2B7004449CA /* KidsSportsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CFA31D98F2B7004449CA /* KidsSportsTests.swift */; };
 		1B84CFAF1D98F2B7004449CA /* KidsSportsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CFAE1D98F2B7004449CA /* KidsSportsUITests.swift */; };
 		1B84CFBD1D98F6BE004449CA /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B84CFBC1D98F6BE004449CA /* fontawesome-webfont.ttf */; };
+		1B91CE711DA3880C001C5D58 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91CE701DA3880C001C5D58 /* CustomHeaderCell.swift */; };
+		1B91CE731DA39AE9001C5D58 /* CustomFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B91CE721DA39AE9001C5D58 /* CustomFooterCell.swift */; };
 		1B96EF0D1DA0E8F100930C10 /* KidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B96EF0C1DA0E8F100930C10 /* KidTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		1B84CFAE1D98F2B7004449CA /* KidsSportsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidsSportsUITests.swift; sourceTree = "<group>"; };
 		1B84CFB01D98F2B7004449CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B84CFBC1D98F6BE004449CA /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fontawesome-webfont.ttf"; path = "../../../../../../../Downloads/font-awesome-4.6-3.3/fonts/fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		1B91CE701DA3880C001C5D58 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		1B91CE721DA39AE9001C5D58 /* CustomFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFooterCell.swift; sourceTree = "<group>"; };
 		1B96EF0C1DA0E8F100930C10 /* KidTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +112,8 @@
 				1B84CF8E1D98F2B7004449CA /* AppDelegate.swift */,
 				1B84CF901D98F2B7004449CA /* ViewController.swift */,
 				1B84CF921D98F2B7004449CA /* Main.storyboard */,
+				1B91CE701DA3880C001C5D58 /* CustomHeaderCell.swift */,
+				1B91CE721DA39AE9001C5D58 /* CustomFooterCell.swift */,
 				1B84CF951D98F2B7004449CA /* Assets.xcassets */,
 				1B84CFBC1D98F6BE004449CA /* fontawesome-webfont.ttf */,
 				1B84CF971D98F2B7004449CA /* LaunchScreen.storyboard */,
@@ -272,11 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B91CE711DA3880C001C5D58 /* CustomHeaderCell.swift in Sources */,
 				1B2488881DA0DD6E0098919B /* KidTableViewController.swift in Sources */,
 				1B2488801DA0D6050098919B /* Kid.swift in Sources */,
 				1B84CF911D98F2B7004449CA /* ViewController.swift in Sources */,
 				1B96EF0D1DA0E8F100930C10 /* KidTableViewCell.swift in Sources */,
 				1B84CF8F1D98F2B7004449CA /* AppDelegate.swift in Sources */,
+				1B91CE731DA39AE9001C5D58 /* CustomFooterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

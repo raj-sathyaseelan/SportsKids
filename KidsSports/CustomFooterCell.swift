@@ -1,23 +1,19 @@
 //
-//  KidTableViewCell.swift
+//  CustomFooterCell.swift
 //  KidsSports
 //
-//  Created by Raj Sathyaseelan on 10/2/16.
+//  Created by Raj Sathyaseelan on 10/4/16.
 //  Copyright © 2016 Token. All rights reserved.
 //
 
 import UIKit
 
-class KidTableViewCell: UITableViewCell {
-    
-    //MARK: Properties
-    
-    @IBOutlet weak var kidNameLabel: UILabel!
-    @IBOutlet weak var photoUIImage: UIImageView!
-    @IBOutlet weak var schoolNameAgeLabel: UILabel!
-    @IBOutlet weak var kidStackView: UIStackView!
+class CustomFooterCell: UITableViewCell {
     
     
+    @IBOutlet weak var footerButton: UIButton!
+    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
