@@ -10,7 +10,6 @@ import UIKit
 
 class KidTableViewController: UITableViewController {
     
-    
     var kids = [Kid]()
     let searchController = UISearchController(searchResultsController: nil)
     var filteredKids = [Kid]()
@@ -191,10 +190,9 @@ class KidTableViewController: UITableViewController {
         return newImage!
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        //
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //code
     }
-    
 
     /*
     // Override to support conditional editing of the table view.
