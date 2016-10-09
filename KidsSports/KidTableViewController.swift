@@ -127,7 +127,7 @@ class KidTableViewController: UITableViewController {
         
         let stackView = UIStackView(arrangedSubviews: arrangedImages)
         stackView.axis = .horizontal
-        stackView.distribution = .
+        stackView.distribution = .fill
         stackView.alignment = .fill
         stackView.spacing = 8
         stackView.translatesAutoresizingMaskIntoConstraints = false

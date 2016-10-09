@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B2488801DA0D6050098919B /* Kid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24887F1DA0D6050098919B /* Kid.swift */; };
-		1B2488881DA0DD6E0098919B /* KidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2488871DA0DD6E0098919B /* KidTableViewController.swift */; };
+		1B32E41A1DA9C55800868DC3 /* KidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32E4191DA9C55800868DC3 /* KidTableViewController.swift */; };
 		1B84CF8F1D98F2B7004449CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CF8E1D98F2B7004449CA /* AppDelegate.swift */; };
 		1B84CF911D98F2B7004449CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B84CF901D98F2B7004449CA /* ViewController.swift */; };
 		1B84CF941D98F2B7004449CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B84CF921D98F2B7004449CA /* Main.storyboard */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		1B24887F1DA0D6050098919B /* Kid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Kid.swift; path = model/Kid.swift; sourceTree = "<group>"; };
-		1B2488871DA0DD6E0098919B /* KidTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidTableViewController.swift; sourceTree = "<group>"; };
+		1B32E4191DA9C55800868DC3 /* KidTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidTableViewController.swift; sourceTree = "<group>"; };
 		1B84CF8B1D98F2B7004449CA /* KidsSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B84CF8E1D98F2B7004449CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B84CF901D98F2B7004449CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 				1B84CF971D98F2B7004449CA /* LaunchScreen.storyboard */,
 				1B84CF9A1D98F2B7004449CA /* Info.plist */,
 				1B24887F1DA0D6050098919B /* Kid.swift */,
-				1B2488871DA0DD6E0098919B /* KidTableViewController.swift */,
 				1B96EF0C1DA0E8F100930C10 /* KidTableViewCell.swift */,
+				1B32E4191DA9C55800868DC3 /* KidTableViewController.swift */,
 			);
 			path = KidsSports;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B91CE711DA3880C001C5D58 /* CustomHeaderCell.swift in Sources */,
-				1B2488881DA0DD6E0098919B /* KidTableViewController.swift in Sources */,
+				1B32E41A1DA9C55800868DC3 /* KidTableViewController.swift in Sources */,
 				1B2488801DA0D6050098919B /* Kid.swift in Sources */,
 				1B84CF911D98F2B7004449CA /* ViewController.swift in Sources */,
 				1B96EF0D1DA0E8F100930C10 /* KidTableViewCell.swift in Sources */,
@@ -421,6 +421,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
