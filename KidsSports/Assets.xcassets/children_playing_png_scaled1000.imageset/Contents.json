@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "children_playing_png_scaled1000.png",
+      "filename" : "token-logo-icon-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "token-logo-icon-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "token-logo-icon.png",
       "scale" : "3x"
     }
   ],

@@ -50,8 +50,6 @@ class KidTableViewController: UITableViewController {
         
         kidSports += [sport1, sport2]
         
-        
-        
         let kidPhoto1 = UIImage(named: "kid1")!
         let kid1 = Kid(firstName: "Joe", lastName: "Buck", photo: kidPhoto1, schoolName: "Coyote Creek", age: 6, sports: kidSports)
         
@@ -66,8 +64,6 @@ class KidTableViewController: UITableViewController {
         
         
         kids += [kid1, kid2, kid3, kid4]
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -26,21 +26,18 @@
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "iphone-spotlight-3x-7-9.png",
+      "size" : "40x40",
       "scale" : "3x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "iphone-app-2x-7-9.png",
+      "size" : "60x60",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "iphone-app-3x-7-9.png",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
